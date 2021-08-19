@@ -10,17 +10,28 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/blog?serverTimezone=Asia/Seoul
+    url: jdbc:mysql://localhost:3306/security ?serverTimezone=Asia/Seoul
     username: cos
     password: cos1234
 
   jpa:
     open-in-view: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
       use-new-id-generator-mappings: false
     show-sql: true
     properties:
       hibernate.format_sql: true
+
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 719385414817-se4umhvp5431cfpkn1qrs9k6eil11kt1.apps.googleusercontent.com
+            client-secret: omkXNZx3naAOlBaw_FY4W1hz
+            scope:
+              - email
+              - profile
