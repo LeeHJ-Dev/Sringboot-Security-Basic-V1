@@ -14,6 +14,9 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 /**
  * google client id : 719385414817-se4umhvp5431cfpkn1qrs9k6eil11kt1.apps.googleusercontent.com
  * google client pass : omkXNZx3naAOlBaw_FY4W1hz
+ *
+ * facebook 앱 : 374481084238770
+ * facebook 시크릿 코드 : 82a7c36f1ba336555216a48e6040a0bf
  */
 @Configuration
 @EnableWebSecurity          // 스프링 시큐리티 필터가 스프링 필터체인에 등록이 됩니다.
