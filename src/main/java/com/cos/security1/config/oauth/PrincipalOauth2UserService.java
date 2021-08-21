@@ -17,6 +17,16 @@ import org.springframework.stereotype.Service;
 
 import java.util.Map;
 
+/**
+ * OAuth(Open Authorization)는 토큰 기반의 인증 및 권한을 위한 표준 프로토콜이다. OAuth와 같은 인증 프로토콜을 통해
+ * 유저의 정보를 페이스북, 구글, 카카오, 네이버 등 서비스에서 제공받을 수 있고 이 정보를 기반으로 어플리케이션 사용자에게 로그인이나
+ * 다른 여러 기능들을 쉽게 제공할 수 있습니다.
+ *
+ *
+ * DefaultOAuth2UserService Class
+ *
+ *
+ */
 @Service
 public class PrincipalOauth2UserService extends DefaultOAuth2UserService {
 

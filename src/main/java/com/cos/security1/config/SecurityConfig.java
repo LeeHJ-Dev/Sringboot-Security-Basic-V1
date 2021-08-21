@@ -49,6 +49,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .formLogin()
                 .loginPage("/loginForm")
+
                 // /login 주소로 호출이 되면 시큐리티가 낚아채서 대신 로그인을 진행해줍니다.
                 // Controller "/login" 컨트롤러 생성안해도 된다.
                 // 시큐리티가 자체적으로 로그인을 구현한다.
